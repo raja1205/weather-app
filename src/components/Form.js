@@ -1,23 +1,23 @@
 import React from "react";
 
 const Form = (props) => (
-  <form onSubmit={props.getWeather}>
-    <input type="text" name="longitude" placeholder="Longitude, Ex: 12" />
-    <input type="text" name="lattitude" placeholder="Lattitude, Ex: 77" />
-    <button>Get Weather</button>
-  </form>
+  <div>
+    <form onSubmit={props.getWeather}>
+      <input
+        type="number"
+        step="any"
+        name="longitude"
+        placeholder="Longitude"
+      />
+      <input
+        type="number"
+        step="any"
+        name="lattitude"
+        placeholder="Lattitude"
+      />
+      <button>Get Weather</button>
+    </form>
+  </div>
 );
 
 export default Form;
-
-/* Actual code below, however, we can ignore {} after probs => and return keyword, see above
-const Form = props => {
-return (
-<form onSubmit={props.getWeather}>
-	<input type="text" name="longitude" placeholder="Longitude, Ex: 12"/>
-	<input type="text" name="lattitude"  placeholder="Lattitude, Ex: 77"/>
-	<button>Get Weather</button>
-</form>
-);
-}
-*/
