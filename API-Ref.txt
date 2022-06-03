@@ -1,0 +1,26 @@
+Auhentication Route
+--------------------
+Register: username, password, firstname, lastname
+http://localhost:5000/api/v1/auth/register
+
+Login: username, password
+http://localhost:5000/api/v1/auth/login
+
+
+User Route
+----------
+Get User
+http://localhost:5000/api/v1/user/:id
+
+Update User
+http://localhost:5000/api/v1/user/:id
+
+Delete User
+http://localhost:5000/api/v1/user/:id
+
+{
+"username": "raja1205",
+"password": "raja@1205",
+"firstname": "Raja",
+"lastname": "S"
+}
